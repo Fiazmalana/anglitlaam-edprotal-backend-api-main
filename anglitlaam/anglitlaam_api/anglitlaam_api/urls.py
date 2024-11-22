@@ -7,5 +7,6 @@ urlpatterns = [
     path('api/account/otp/', include('account.urls.portal_account_otp_urls')),  
     path('api/account/forget/', include('account.urls.portal_account_forget_urls')),  
     path('api/account/types/', include('account.urls.portal_account_type_urls')),  
-    path('api/class-types/', include('account.urls.portal_class_type_urls')), 
+    path('api/class-types/', include('account.urls.portal_class_type_urls')),  
+    # path('api/class_type_account_permission/', include('account.urls.portal_class_type_permission_urls')),  
 ]

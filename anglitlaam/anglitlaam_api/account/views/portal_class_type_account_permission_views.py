@@ -1,0 +1,8 @@
+# views/portal_class_type_permission_views.py
+from rest_framework import viewsets
+from serializers.portal_class_type_account_permission_serializers import ClassTypeAccountPermissionSerializer
+from models.portal_class_type_account_permission_models import ClassTypeAccountPermission
+
+class ClassTypeAccountPermissionViewSet(viewsets.ModelViewSet):
+    queryset = ClassTypeAccountPermission.objects.all()
+    serializer_class = ClassTypeAccountPermissionSerializer
